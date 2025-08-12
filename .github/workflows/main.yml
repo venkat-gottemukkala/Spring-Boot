@@ -20,5 +20,5 @@ jobs:
         distribution: 'temurin'
     - name: Build with maven
       run: mvn clean install
-      working-directory: ./Spring-Boot
+      working-directory: ./Spring-Boot/Spring-Boot
 
