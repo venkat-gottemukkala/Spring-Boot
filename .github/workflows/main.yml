@@ -16,7 +16,6 @@ jobs:
      - name: Build Using Maven
        run:  mvn clean install
        working-directory: gap_springboot_app
-     - run: mkdir staging && cp target/*.jar staging
      - name: Upload a Build Artifactory
        uses: actions/upload-artifact@v4
        with:
