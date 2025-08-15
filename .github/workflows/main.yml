@@ -1,10 +1,16 @@
 name: Java CI with Maven
 
-on: workflow_dispatch
+on: 
+ workflow_dispatch:
+  inputs:
+   TARGET_ENVIRONMENT:
+   default: Dev
+   
 
 jobs:
  CI_Non_containerzation_build:
   runs-on: ubuntu-latest
+  environment: ${inputs.TARGET_ENVIRONMENT}
   steps:
      - name: Checkout
        uses: actions/checkout@v4
