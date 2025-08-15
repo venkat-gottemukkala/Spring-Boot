@@ -1,6 +1,6 @@
 name: Call reusable workflow
 
-on: push
+on: workflow_dispatch
 
 jobs:
  call_reusable:
