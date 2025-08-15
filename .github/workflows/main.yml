@@ -27,6 +27,8 @@ jobs:
        with:
         name: package
         path: staging
+     - run: echo 'vars is ${vars.variable}'
+     - run: echo 'secret is ${vars.secret}'
        
       
        
