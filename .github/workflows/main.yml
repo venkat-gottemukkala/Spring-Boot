@@ -4,6 +4,7 @@ on:
  workflow_dispatch:
   inputs:
    TARGET_ENVIRONMENT:
+    type: environment
     default: Dev
    
 
